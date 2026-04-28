@@ -97,7 +97,7 @@ public class NpcAccessibilityTaggerOverlay extends Overlay {
 
     // Copied from Buchus.
     private boolean shouldShow(NPC npc) {
-        if (npc == null || npc.getComposition() == null) {
+        if (npc.getComposition() == null) {
             return false;
         }
         if (npc.getName() == null || npc.getName().isEmpty() || npc.getName().equals("null")) {
